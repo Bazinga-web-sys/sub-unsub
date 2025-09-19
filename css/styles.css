@@ -12,7 +12,7 @@
 
 .card {
   background: linear-gradient(to bottom, #ffffff, #fdf8e9);
-  /* Koristimo dvh (dynamic viewport height) umjesto vh za mobile compatibility */
+
   min-height: 100dvh;
   width: 100vw;
   text-align: center;
@@ -21,7 +21,7 @@
   justify-content: space-between;
   padding: 1.5rem;
   
-  /* Fallback za starije browsere */
+
   min-height: 100vh;
   min-height: 100dvh;
 }
@@ -153,7 +153,6 @@ footer .copyright {
   color: #4b5563;
 }
 
-/* Desktop responsive */
 @media (min-width: 768px) {
   .card {
     max-width: 480px;
@@ -167,4 +166,5 @@ footer .copyright {
     font-size: 1.5rem;
   }
 }
+
 
