@@ -18,13 +18,18 @@ body {
 
 .card {
   background: linear-gradient(to bottom, #ffffff, #fdf8e9);
-  min-height: 100vh;
+  /* Koristimo dvh (dynamic viewport height) umjesto vh za mobile compatibility */
+  min-height: 100dvh;
   width: 100vw;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding: 1.5rem;
+  
+  /* Fallback za starije browsere */
+  min-height: 100vh;
+  min-height: 100dvh;
 }
 
 .spacer-top {
@@ -103,6 +108,7 @@ p.question {
 .btn.unsub {
   background: #fbcc18;
   color: #000;
+  font-size: medium;
 }
 
 .btn.unsub:hover,
@@ -114,7 +120,7 @@ p.question {
 
 .btn-link {
   display: inline-block;
-  font-size: 0.95rem;
+  font-size: medium;
   color: #1a1a1a;
   text-decoration: none;
   cursor: pointer;
@@ -158,6 +164,7 @@ footer .copyright {
   .card {
     max-width: 480px;
     min-height: 100vh;
+    min-height: 100dvh;
     margin: 0 auto;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
   }
