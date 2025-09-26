@@ -82,7 +82,7 @@ p.question {
   flex-shrink: 0;
 }
 
-/* ---------- BUTTONS & LINKS ---------- */
+/* ---------- buttoni  i linkovi ---------- */
 .btn {
   display: block;
   width: 100%;
@@ -146,17 +146,8 @@ footer {
   text-align: center;
   flex-shrink: 0;
 }
-
-footer strong {
-  font-weight: 700;
-}
 footer > p {
   font-size: small;
-}
-footer .copyright {
-  margin-top: 0.5rem;
-  font-size: 0.7rem;
-  color: #4b5563;
 }
 
 /* Desktop responsive */
